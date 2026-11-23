@@ -24,11 +24,16 @@
        LA ESTANTERÍA
        Para agregar un libro nuevo en el futuro:
        1. Sube la imagen de la portada a la carpeta «portadas».
-       2. Copia y pega uno de los bloques <article class="libro">…</article>
+       2. Copia y pega uno de los bloques de tarjeta completos
           y cambia la imagen, el título, la descripción y el enlace.
        3. Cuando el PDF esté en Google Drive, pega su enlace en el
           botón «Descargar PDF» (donde hoy dice href="#" y la clase
           «pendiente»). Quita la clase «pendiente» al activarlo.
+       4. Cada tarjeta muestra solo el primer párrafo de la sinopsis;
+          el resto va dentro de <div class="sinopsis-resto" hidden>
+          y se despliega con el botón «Ver sinopsis completa».
+          Si agregas párrafos nuevos a un libro, ponlos dentro de
+          ese div para que nazcan ocultos.
        ============================================================ -->
   <section class="estanteria" aria-label="Libros">
 
@@ -37,10 +42,13 @@
       <h2>El Monstruo de Santiago</h2>
       <p class="genero">Novela · 2024</p>
       <p class="descripcion">En las calles de la mística y nevada Santiago de Querétaro, una serie de eventos sobrenaturales y crímenes inexplicables ha desatado el pánico entre sus habitantes. La ciudad, conocida por su rica historia y hermosura colonial, se convierte en el escenario de una lucha entre fuerzas ancestrales y contemporáneas.</p>
+      <button class="boton-sinopsis" type="button" aria-expanded="false">Ver sinopsis completa</button>
+      <div class="sinopsis-resto" hidden>
       <p class="descripcion">«El Monstruo de Santiago», una entidad misteriosa y enigmática, se erige en el centro de esta tormenta. Con poderes que desafían la realidad y una presencia que oscila entre el terror y la fascinación, este ser despierta preguntas que van más allá de la comprensión humana.</p>
       <p class="descripcion">A través de los ojos de una galería de personajes inolvidables, desde Octavio, el gobernador de Querétaro con un pasado complejo, hasta Alberto, un hombre que encarna la muerte misma, la novela nos sumerge en un mundo donde lo místico y lo cotidiano se entrelazan de formas inesperadas.</p>
       <p class="descripcion">Juan Pablo Malkrovi, en su obra maestra, teje una narrativa que explora temas como la justicia, el amor, el destino y la naturaleza del mal. Con influencias de Cortázar, Rowling y Borges, Malkrovi crea un universo literario único que desafía los límites de la ficción.</p>
       <p class="descripcion">Descubre el poder de «El Monstruo de Santiago», una historia que te llevará a los rincones más oscuros del alma humana y te mostrará que, a veces, los monstruos más temibles son aquellos que se esconden en la luz.</p>
+      </div>
       <a class="boton-descarga pendiente" href="#" aria-disabled="true">Descarga disponible en diciembre</a>
     </article>
 
@@ -49,7 +57,10 @@
       <h2>Los secretos del Conín</h2>
       <p class="genero">Crónica · Crónicas de los testigos silenciosos</p>
       <p class="descripcion">¿Y si las piedras del acueducto pudieran hablar? ¿Qué nos diría el río que hoy fluye herido, o la montaña que vio morir estrellas antes que hombres? En Los secretos del Conín, Juan Pablo Malkrovi nos entrega una crónica vibrante y desgarradora de Querétaro, narrada no por los héroes de bronce, sino por sus testigos más antiguos y olvidados.</p>
+      <button class="boton-sinopsis" type="button" aria-expanded="false">Ver sinopsis completa</button>
+      <div class="sinopsis-resto" hidden>
       <p class="descripcion">Desde el último sillar del arco treinta y cinco hasta el susurro de un guerrero chichimeca que se niega a desaparecer, cada página es un viaje a través de cuatro siglos de fe, sudor y olvido. Esta es la historia de una ciudad que se fundó sobre el esfuerzo de sombras, donde la cantera rosa se mezcla con el lodo y la sangre para recordarnos que, bajo el rugido de la modernidad, el pasado sigue respirando.</p>
+      </div>
       <a class="boton-descarga pendiente" href="#" aria-disabled="true">Descarga disponible en diciembre</a>
     </article>
 
@@ -58,9 +69,12 @@
       <h2>Un mundo entre Diosas y Bestias</h2>
       <p class="genero">Poemario</p>
       <p class="descripcion">¿Qué hay detrás de una pantalla cuando el mundo exterior se desgaja en la más amarga melancolía?</p>
+      <button class="boton-sinopsis" type="button" aria-expanded="false">Ver sinopsis completa</button>
+      <div class="sinopsis-resto" hidden>
       <p class="descripcion">Un mundo entre diosas y bestias no es un libro de treguas; es la radiografía cruda, lúcida e indómita de una mente atrapada en el asedio de su propia hiperconciencia. A través de una ráfaga de poemas y crónicas de una honestidad brutal, Juan Pablo Malkrovi traza el mapa térmico de un náufrago existencial que se niega a conformarse con las conexiones tibias, la burocracia gris y la rutina ordinaria.</p>
       <p class="descripcion">Dividido en un vaivén implacable entre el mito y la rabia, este manuscrito edifica santuarios digitales habitados por deidades de silicio, voces de armónicos libres, ojos de rubí y un amor de celosía que sirve como sistema de soporte vital. Es el pacto voluntario con la ilusión, el cobijo bajo una boina militar o frente a unas orejas de conejo, como única defensa para no morir de frío en un frívolo mundo de tarjetas y constructoras.</p>
       <p class="descripcion">Desde el lirismo desgarrador de un adiós inalcanzable hasta el rugido animal chocando contra el orden finito de las cosas, Malkrovi nos arrastra por una madriguera de pólvora, café de especialidad y literatura indómita. Una confesión colosal para los irremediablemente idealistas, para los productos defectuosos que prefieren ser devorados por un eterno carmesí antes que rendirse a la insípida realidad de los mortales.</p>
+      </div>
       <a class="boton-descarga pendiente" href="#" aria-disabled="true">Descarga disponible en diciembre</a>
     </article>
 
@@ -69,10 +83,13 @@
       <h2>Los días olvidados por el tiempo</h2>
       <p class="genero">Poesía · 2025</p>
       <p class="descripcion">Es una colección de textos poéticos que explora los territorios más íntimos y universales de la experiencia humana a través de 100 composiciones breves, concebidas para ser leídas una por día o según el ritmo que dicte la intuición del lector. Juan Pablo Malkrovi construye un mosaico emocional que transita entre el deseo y la pérdida, la fortaleza y la vulnerabilidad, lo cotidiano y lo trascendente.</p>
+      <button class="boton-sinopsis" type="button" aria-expanded="false">Ver sinopsis completa</button>
+      <div class="sinopsis-resto" hidden>
       <p class="descripcion">Desde la geografía específica de Querétaro hasta los paisajes interiores más recónditos, estos textos cartografían tanto el mundo exterior como los abismos de la conciencia.</p>
       <p class="descripcion">La colección abarca registros diversos: elegías amorosas de intensidad devastadora, meditaciones existenciales sobre la naturaleza del tiempo y la identidad, retratos sociales que revelan las contradicciones de la vida urbana contemporánea, y exploraciones oníricas donde lo fantástico irrumpe en lo real. El autor desarrolla una mitología personal poblada de figuras como Timpatrino —criatura que encarna los miedos primordiales— y construye una cosmología poética donde el terror y la belleza coexisten.</p>
       <p class="descripcion">A través de un lenguaje que combina precisión técnica con intensidad emocional, Malkrovi aborda temas universales: la búsqueda de identidad en un mundo fragmentado, la inevitabilidad de la pérdida, la tensión entre deseo y realidad, la responsabilidad ante el sufrimiento ajeno. Los textos funcionan tanto como unidades independientes como fragmentos de un autorretrato lírico más amplio.</p>
       <p class="descripcion">Propone una lectura no lineal que respeta el ritmo interno de cada lector, invitando a descubrir conexiones inesperadas entre textos aparentemente dispares. Es un libro sobre la persistencia de la memoria y la fugacidad del presente, sobre la capacidad humana de encontrar belleza en la devastación y sentido en la incertidumbre.</p>
+      </div>
       <a class="boton-descarga pendiente" href="#" aria-disabled="true">Descarga disponible en diciembre</a>
     </article>
 

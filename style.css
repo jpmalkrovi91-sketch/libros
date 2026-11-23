@@ -104,6 +104,26 @@ h1, h2 { font-family: "Fraunces", Georgia, serif; }
 /* El botón de descarga queda siempre al fondo de la tarjeta. */
 .libro .boton-descarga { margin-top: auto; }
 
+/* ---------- Botón de sinopsis ----------
+   Muestra u oculta el resto de la descripción de cada libro.
+   Discreto: solo texto verde con una flechita, sin recuadro. */
+.boton-sinopsis {
+  background: none;
+  border: none;
+  padding: .2rem 0 .4rem;
+  margin: 0 auto .6rem 0;
+  font: inherit;
+  font-size: .92rem;
+  font-weight: 600;
+  color: var(--verde);
+  cursor: pointer;
+  text-align: left;
+}
+.boton-sinopsis::after { content: " ▾"; }
+.boton-sinopsis[aria-expanded="true"]::after { content: " ▴"; }
+.boton-sinopsis:hover { color: var(--verde-claro); text-decoration: underline; }
+.sinopsis-resto { text-align: left; }
+
 /* ---------- Botones ---------- */
 .boton-descarga,
 .boton-cafe {
