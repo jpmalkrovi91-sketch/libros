@@ -3,8 +3,9 @@
 // JavaScript mínimo, pensado para leerse y editarse fácil.
 //
 // Hoy hace una sola cosa: los botones con clase «pendiente»
-// (descargas que llegan en diciembre y el botón de café)
-// muestran un aviso amable si alguien logra pulsarlos.
+// (las descargas que llegan en diciembre) muestran un aviso
+// amable si alguien logra pulsarlos. El botón de café ya está
+// activo y no lleva esa clase.
 // Cuando actives un enlace real, quita la clase «pendiente»
 // de ese botón en el HTML y este archivo no necesita cambios.
 // ==========================================================
