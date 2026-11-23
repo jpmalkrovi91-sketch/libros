@@ -98,9 +98,11 @@ h1, h2 { font-family: "Fraunces", Georgia, serif; }
 .descripcion {
   color: var(--tinta-suave);
   font-size: .97rem;
-  margin: 0 0 1.1rem;
-  flex-grow: 1;
+  margin: 0 0 .7rem;
+  text-align: left;
 }
+/* El botón de descarga queda siempre al fondo de la tarjeta. */
+.libro .boton-descarga { margin-top: auto; }
 
 /* ---------- Botones ---------- */
 .boton-descarga,
