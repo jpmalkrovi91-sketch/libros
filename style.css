@@ -1,0 +1,160 @@
+/* ==========================================================
+   Sitio de autor — Juan Pablo Malkrovi
+   Estilos: paleta cálida de biblioteca (crema, tinta, verde).
+   Todo está comentado para que puedas editarlo con confianza:
+   cambia los colores en :root y se aplica en todo el sitio.
+   ========================================================== */
+
+:root {
+  --crema: #f6f1e7;
+  --papel: #fffdf8;
+  --tinta: #2b2118;
+  --tinta-suave: #5c4f42;
+  --verde: #2e5339;
+  --verde-claro: #3d6e4c;
+  --dorado: #b98a2f;
+  --borde: #ddd2bd;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--crema);
+  color: var(--tinta);
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2 { font-family: "Fraunces", Georgia, serif; }
+
+/* ---------- Encabezado ---------- */
+.encabezado {
+  text-align: center;
+  padding: 3.5rem 1.25rem 2rem;
+}
+.encabezado h1 {
+  font-size: clamp(2.2rem, 6vw, 3.4rem);
+  margin: 0 0 .25rem;
+  letter-spacing: .01em;
+}
+.lema {
+  margin: 0;
+  color: var(--verde);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-size: .85rem;
+}
+.nota-obra {
+  max-width: 34rem;
+  margin: 1.25rem auto 0;
+  color: var(--tinta-suave);
+  font-size: 1.05rem;
+}
+
+/* ---------- Estantería ---------- */
+.estanteria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.75rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 2.5rem;
+}
+
+.libro {
+  background: var(--papel);
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  padding: 1.25rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(43, 33, 24, .06);
+  display: flex;
+  flex-direction: column;
+}
+.libro img {
+  width: 100%;
+  max-width: 210px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 4px;
+  margin: 0 auto 1rem;
+  box-shadow: 0 6px 16px rgba(43, 33, 24, .25);
+}
+.libro h2 {
+  font-size: 1.3rem;
+  margin: 0 0 .15rem;
+  line-height: 1.25;
+}
+.genero {
+  margin: 0 0 .6rem;
+  color: var(--dorado);
+  font-weight: 600;
+  font-size: .85rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.descripcion {
+  color: var(--tinta-suave);
+  font-size: .97rem;
+  margin: 0 0 1.1rem;
+  flex-grow: 1;
+}
+
+/* ---------- Botones ---------- */
+.boton-descarga,
+.boton-cafe {
+  display: inline-block;
+  background: var(--verde);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: .65rem 1.3rem;
+  border-radius: 999px;
+  transition: background .2s ease;
+}
+.boton-descarga:hover,
+.boton-cafe:hover { background: var(--verde-claro); }
+
+/* Botón aún sin enlace real (descargas de diciembre / café):
+   se ve atenuado y no se puede pulsar. Quita la clase
+   «pendiente» del HTML cuando pegues el enlace verdadero. */
+.pendiente {
+  opacity: .55;
+  pointer-events: none;
+}
+
+/* ---------- Sobre el autor ---------- */
+.sobre-mi {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 2rem;
+}
+.sobre-mi h2 { font-size: 1.7rem; margin-bottom: .5rem; }
+
+/* ---------- Café ---------- */
+.cafe {
+  text-align: center;
+  max-width: 36rem;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 3rem;
+}
+.cafe h2 { font-size: 1.7rem; margin-bottom: .4rem; }
+.cafe p { color: var(--tinta-suave); }
+.boton-cafe {
+  background: var(--dorado);
+  font-size: 1.05rem;
+  margin-top: .5rem;
+}
+.boton-cafe:hover { background: #a37a28; }
+
+/* ---------- Pie ---------- */
+footer {
+  border-top: 1px solid var(--borde);
+  text-align: center;
+  padding: 1.5rem 1rem 2rem;
+  color: var(--tinta-suave);
+  font-size: .9rem;
+}
+footer a { color: var(--verde); }

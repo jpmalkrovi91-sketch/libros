@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juan Pablo Malkrovi — Escritor</title>
+<meta name="description" content="Sitio oficial de Juan Pablo Malkrovi, escritor queretano. Toda su obra en descarga digital gratuita.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="encabezado">
+  <h1>Juan Pablo Malkrovi</h1>
+  <p class="lema">Escritor · Santiago de Querétaro, México</p>
+  <p class="nota-obra">Desde diciembre de 2026, toda mi obra se puede descargar gratis, en digital. Los libros deben llegar a quien los necesita.</p>
+</header>
+
+<main>
+
+  <!-- ============================================================
+       LA ESTANTERÍA
+       Para agregar un libro nuevo en el futuro:
+       1. Sube la imagen de la portada a la carpeta «portadas».
+       2. Copia y pega uno de los bloques <article class="libro">…</article>
+          y cambia la imagen, el título, la descripción y el enlace.
+       3. Cuando el PDF esté en Google Drive, pega su enlace en el
+          botón «Descargar PDF» (donde hoy dice href="#" y la clase
+          «pendiente»). Quita la clase «pendiente» al activarlo.
+       ============================================================ -->
+  <section class="estanteria" aria-label="Libros">
+
+    <article class="libro">
+      <img src="portadas/monstruo.jpg" alt="Portada de El Monstruo de Santiago">
+      <h2>El Monstruo de Santiago</h2>
+      <p class="genero">Novela · 2024</p>
+      <p class="descripcion">Un Señor de la Muerte encarnado entre humanos recorre las calles de Querétaro mientras la muerte y el destino se disputan a sus personajes. Mi novela más extensa; yo mismo la traduje al inglés.</p>
+      <a class="boton-descarga pendiente" href="#" aria-disabled="true">Descarga disponible en diciembre</a>
+    </article>
+
+    <article class="libro">
+      <img src="portadas/conin.jpg" alt="Portada de Los secretos del Conín">
+      <h2>Los secretos del Conín</h2>
+      <p class="genero">Crónica · Crónicas de los testigos silenciosos</p>
+      <p class="descripcion">Las piedras, los ríos, los muertos y los marginados de la historia toman la palabra contra el olvido.</p>
+      <a class="boton-descarga pendiente" href="#" aria-disabled="true">Descarga disponible en diciembre</a>
+    </article>
+
+    <article class="libro">
+      <img src="portadas/diosas.jpg" alt="Portada de Un mundo entre Diosas y Bestias">
+      <h2>Un mundo entre Diosas y Bestias</h2>
+      <p class="genero">Poemario</p>
+      <p class="descripcion">Un poemario sobre el amor imposible y la devoción a distancia.</p>
+      <a class="boton-descarga pendiente" href="#" aria-disabled="true">Descarga disponible en diciembre</a>
+    </article>
+
+    <article class="libro">
+      <img src="portadas/dias.jpg" alt="Portada de Los días olvidados por el tiempo">
+      <h2>Los días olvidados por el tiempo</h2>
+      <p class="genero">Poesía · 2025</p>
+      <p class="descripcion">Cien textos poéticos breves sobre el tiempo, la memoria, el deseo y la pérdida.</p>
+      <a class="boton-descarga pendiente" href="#" aria-disabled="true">Descarga disponible en diciembre</a>
+    </article>
+
+  </section>
+
+  <section class="sobre-mi" aria-label="Sobre el autor">
+    <h2>Sobre el autor</h2>
+    <p>Juan Pablo Malkrovi (Santiago de Querétaro, México) es escritor e intérprete consecutivo especializado en el ámbito médico, con casi siete años de trayectoria trabajando en inglés, español y portugués.</p>
+    <p>Su obra está atravesada por Querétaro — la ciudad donde vive y que considera la más hermosa del mundo — convertida en territorio mítico y cotidiano a la vez. Escribe sobre la muerte, el destino, la memoria y el amor. Su primer reconocimiento literario llegó en 2010, cuando su cuento «Brygham» recibió una mención honorífica en el 10º Concurso Nacional de Cuento Preuniversitario Juan Rulfo.</p>
+    <p>Entre sus influencias declaradas están Julio Cortázar — su modelo de coherencia entre lo que se piensa, se dice y se hace —, Jorge Luis Borges y J. K. Rowling.</p>
+  </section>
+
+  <section class="cafe" aria-label="Apoya al autor">
+    <h2>¿Te gustó un libro?</h2>
+    <p>Los libros son gratuitos. Si alguno te acompañó y quieres agradecerlo, puedes invitarme un café.</p>
+    <!-- ==========================================================
+         BOTÓN DE CAFÉ
+         Cuando tengas tu enlace de Buy Me a Coffee, pégalo aquí:
+         cambia el href="#" por tu dirección, por ejemplo:
+         href="https://www.buymeacoffee.com/tuusuario"
+         y quita la clase «pendiente» del enlace.
+         ========================================================== -->
+    <a class="boton-cafe pendiente" href="#" aria-disabled="true">☕ Invítame un café</a>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Juan Pablo Malkrovi · Santiago de Querétaro, México</p>
+  <p><a href="https://www.instagram.com/malkrovijp" target="_blank" rel="noopener">Instagram</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
